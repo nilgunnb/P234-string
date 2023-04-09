@@ -46,7 +46,7 @@
         }
         else if (StudyingYears > 0 && StudyingYears < 4 && Points == 100)
         {
-            Console.WriteLine("Ay deli, ikinci imtahan neyine lazim?! 100-nu almisan otur yerinde de");
+            Console.WriteLine("Ikinci imtahan lazim deyil. 100-nu almisan otur yerinde");
         }
         else if (StudyingYears > 0 && StudyingYears < 4 && Points < 80)
         {
@@ -58,7 +58,7 @@
         }
         else if (StudyingYears == 4)
         {
-            Console.WriteLine("Artiq mezun olub, imtahanlarin verib. El cekin usaqdan");
+            Console.WriteLine("Artiq mezun olub, imtahanlarin verib");
         }
     }
 
