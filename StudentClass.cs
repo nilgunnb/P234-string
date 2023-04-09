@@ -1,6 +1,4 @@
-﻿
-
-    class Student
+﻿class Student
 {
     public string FirstName;
     public string LastName;
@@ -22,11 +20,11 @@
     {
         Console.WriteLine($"{this.FirstName},{this.LastName}");
     }
-
+    
     public void GetFullInfo()
     {
         Console.WriteLine($"{this.FirstName},{this.LastName},{this.Group},{this.Points},{this.StudyingYears}");
-
+        
         if (StudyingYears > 0 && StudyingYears < 4)
         {
             isGraduated = false;
@@ -37,15 +35,14 @@
             isGraduated = true;
             Console.WriteLine("Mezun olub");
         }
-        else if (StudyingYears < 0 || StudyingYears > 4)
+        else
         {
-            Console.WriteLine("Bu hec universitetde deyil");
+            Console.WriteLine("Bu hec univetsitetde deyil");
         }
-       
 
         if (StudyingYears > 0 && StudyingYears < 4 && Points > 80 && Points < 100)
         {
-            Console.WriteLine("Ikinci imtahana gire belersen,malades");
+            Console.WriteLine( "Ikinci imtahana gire belersen,malades");
         }
         else if (StudyingYears > 0 && StudyingYears < 4 && Points == 100)
         {
@@ -55,7 +52,7 @@
         {
             Console.WriteLine("Ikinci imtahana gire bilmersen. Vaxtinda oxuyardin");
         }
-        else if (StudyingYears > 0 && StudyingYears < 4 && Points < 0 || Points > 100)
+        else if (StudyingYears > 0 && StudyingYears < 4 && Points < 0 || Points < 100)
         {
             Console.WriteLine("Bunun balini hansi agilli yazib?");
         }
@@ -67,4 +64,5 @@
 
 
 
-}
+    }
+
